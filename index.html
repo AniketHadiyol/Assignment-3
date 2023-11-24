@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Delight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Smoothie Delight</h1>
+    <form id="smoothieForm">
+        <h2>Customize Your Smoothie</h2>
+
+        <!-- Customer Name -->
+        <label for="customerName">Name:</label>
+        <input type="text" id="customerName" name="customerName" required>
+
+        <!-- Fruit Selection -->
+        <fieldset>
+            <legend>Choose Your Fruits</legend>
+            <label><input type="checkbox" name="fruit" value="banana"> Banana</label>
+            <label><input type="checkbox" name="fruit" value="strawberry"> Strawberry</label>
+            <label><input type="checkbox" name="fruit" value="yogurt"> Banana</label>
+            <label><input type="checkbox" name="fruit" value="Grapes"> Strawberry
+            </label><label><input type="checkbox" name="fruit" value="blueberry"> Apple</label>
+            <label><input type="checkbox" name="fruit" value="strawberry"> Mango</label>
+            <!-- More fruits -->
+        </fieldset>
+
+        <!-- Size Selection -->
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+        <!-- Additional Options -->
+        <label><input type="checkbox" id="addProtein" name="addIns" value="protein"> Add Protein</label>
+
+
+        <!-- Pricing Display -->
+        <div id="priceDisplay">Total Price: $0.00</div>
+
+        <!-- Visual Representation -->
+        <div id="smoothieImage">
+            <img src="smoothie_image.jpg" alt="Your Smoothie" />
+        </div>
+
+        <button type="button" id="orderButton">Order Smoothie</button>
+    </form>
+
+    <div id="orderSummary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
